@@ -12,7 +12,7 @@ pipeline {
     }
     stage('dockerfile npm version') {
       agent {
-          Dockerfile true
+          dockerfile true
       }
       steps {
         sh "node -v"
